@@ -1,4 +1,9 @@
 {
+  "browserslist": [
+    "last 1 version",
+    "not dead",
+    "> 1% in US"
+  ],
   "presets": [
     [
       "@babel/preset-env",

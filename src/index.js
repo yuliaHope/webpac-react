@@ -1,6 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { hot } from 'react-hot-loader'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { hot } from 'react-hot-loader';
+
+import '@babel/polyfill';
 
 class App extends React.Component {
   render() {
@@ -10,5 +12,5 @@ class App extends React.Component {
 
 const AppWithHot = hot(module)(App);
 
-var mountNode = document.getElementById("app");
+var mountNode = document.getElementById('app');
 ReactDOM.render(<AppWithHot name="Jane" />, mountNode);

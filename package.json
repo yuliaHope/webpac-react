@@ -8,11 +8,13 @@
     "clean": "rm -f -r dist",
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p",
-    "start": "webpack-dev-server --open --hot --mode development"
+    "start": "webpack-dev-server --open --hot --mode development",
+    "analyze": "webpack -p --env.analyze"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.8.3",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -25,6 +27,7 @@
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.5",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.3"
   }

@@ -82,7 +82,6 @@ const config = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
     }),
-    env && env.analyze ? new BundleAnalyzerPlugin() : new NothingPlugin(),
   ],
 };
 

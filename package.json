@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -f -r dist",
-    "build-dev": "webpack -d --mode development",
+    "build-dev": "webpack -d",
     "build-prod": "webpack -p",
-    "start": "webpack-dev-server --open --hot --mode development"
+    "start": "webpack-dev-server --open --hot -d"
   },
   "author": "",
   "license": "ISC",

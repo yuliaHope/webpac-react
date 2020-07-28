@@ -2,14 +2,13 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 function NothingPlugin() {
-  this.apply = function () {};
+  this.apply = function() {};
 }
 
-const config = (env) => ({
+const config = env => ({
   entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -44,4 +43,4 @@ const config = (env) => ({
   ],
 });
 
-module.exports = (env) => config(env);
+module.exports = env => config(env);

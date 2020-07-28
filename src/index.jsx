@@ -6,6 +6,8 @@ import { hot } from 'react-hot-loader';
 import image1 from './assets/images/image1.jpg';
 import image2 from './assets/images/image2.png';
 
+import './index.scss';
+
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
@@ -24,7 +26,7 @@ class App extends React.Component {
     const { active } = this.state;
     return (
       <>
-        <button type="button" onClick={this.toggleActive}>
+        <button className="test" type="button" onClick={this.toggleActive}>
           Hello {name}! Press to toggle image
         </button>
         <div>

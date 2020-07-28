@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm dist/bundle.js",
-    "build-dev": "webpack -d --mode development",
-    "build-prod": "webpack -p --mode production",
-    "start": "webpack-dev-server --hot --mode development"
+    "build-dev": "webpack -d",
+    "build-prod": "webpack -p",
+    "start": "webpack-dev-server --hot -d"
   },
   "author": "",
   "license": "ISC",
